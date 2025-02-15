@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimized Wallace Tree Multiplier</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+        input, button, select { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        button { background-color: #28a745; color: white; cursor: pointer; }
+        button:hover { background-color: #218838; }
+        footer { margin-top: 20px; font-size: 12px; color: gray; }
+        h1, h3 { color: #333; }
+    </style>
+</head>
+<body>
+    <div class="container" id="loginPage">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <p>Password Hint: Any password will work!</p>
+        <button onclick="login()">Login</button>
+    </div>
+    
+    <div class="container" id="mainWebsite" style="display: none;">
+        <h1>Implementation of an Optimized Wallace Tree Multiplier</h1>
+        <h3>Introduction</h3>
+        <p>Hi I'm Adarsh Kumar V. This is my project where I have implemented an optimized Wallace Tree Multiplier using Cadence.</p>
+        
+        <h3>Abstract</h3>
+        <p>The Wallace Tree Multiplier is a highly efficient digital circuit used for fast multiplication, optimizing speed and area efficiency.</p>
+        
+        <h3>Applications</h3>
+        <p>Widely used in high-speed processors, DSP applications, and FPGA implementations for efficient arithmetic operations.</p>
+        
+        <h3>Results & Conclusion</h3>
+        <p>Our implementation in Cadence demonstrates improved performance in terms of speed and power efficiency compared to traditional multipliers.</p>
+        
+        <h3>Feedback & Ratings</h3>
+        <p>Share your feedback on my design.</p>
+        <label for="rating">Rate my design:</label>
+        <select id="rating">
+            <option value="5">⭐️⭐️⭐️⭐️⭐️ - Excellent</option>
+            <option value="4">⭐️⭐️⭐️⭐️ - Very Good</option>
+            <option value="3">⭐️⭐️⭐️ - Good</option>
+            <option value="2">⭐️⭐️ - Needs Improvement</option>
+            <option value="1">⭐️ - Poor</option>
+        </select>
+        <button onclick="submitRating()">Submit Rating</button>
+    </div>
+    
+    <footer>
+        &copy; 2025 All Rights Reserved. Made by Adarsh Kumar V.
+    </footer>
+
+    <script>
+        function login() {
+            document.getElementById('loginPage').style.display = 'none';
+            document.getElementById('mainWebsite').style.display = 'block';
+        }
+        
+        function submitRating() {
+            const rating = document.getElementById('rating').value;
+            alert('Thank you for rating my design 😊 ' + rating + ' stars!');
+        }
+    </script>
+</body>
+</html>
